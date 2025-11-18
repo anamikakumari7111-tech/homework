@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Class Timetable</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .timetable-container {
+      width: 90%;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* GRID LAYOUT */
+    .timetable {
+      display: grid;
+      grid-template-columns: 120px repeat(5, 1fr);
+      grid-template-rows: repeat(9, 70px);
+      gap: 2px;
+      background: #333;
+      border: 2px solid #333;
+    }
+
+    .timetable div {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 17px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    /* Header cells */
+    .header {
+      background-color: #cde2ff;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Time column */
+    .time {
+      background-color: #e8eef5;
+      font-weight: bold;
+    }
+
+    /* Subject coloring */
+    .math     { background: #ffe7b3; }
+    .eng      { background: #d2ffd2; }
+    .sci      { background: #d6ecff; }
+    .soc      { background: #ffd6d6; }
+    .pt       { background: #e6d3ff; }
+    .art      { background: #ffe0ee; }
+    .exam     { background: #ffbaba; }
+    .recess   { background: #f0f0f0; font-style: italic; }
+
+  </style>
+</head>
+<body>
+
+  <h1>Weekly Class Timetable</h1>
+
+  <div class="timetable-container">
+
+    <div class="timetable">
+
+      <!-- Header Row -->
+      <div class="header">Time</div>
+      <div class="header">Monday</div>
+      <div class="header">Tuesday</div>
+      <div class="header">Wednesday</div>
+      <div class="header">Thursday</div>
+      <div class="header">Friday</div>
+
+      <!-- Row 1 -->
+      <div class="time">8:00 - 8:45</div>
+      <div class="math">Math</div>
+      <div class="eng">English</div>
+      <div class="sci">Science</div>
+      <div class="soc">Social</div>
+      <div class="math">Math</div>
+
+      <!-- Row 2 -->
+      <div class="time">8:50 - 9:35</div>
+      <div class="eng">English</div>
+      <div class="sci">Science</div>
+      <div class="math">Math</div>
+      <div class="eng">English</div>
+      <div class="sci">Science</div>
+
+      <!-- Row 3 -->
+      <div class="time">9:40 - 10:25</div>
+      <div class="sci">Science</div>
+      <div class="soc">Social</div>
+      <div class="eng">English</div>
+      <div class="math">Math</div>
+      <div class="soc">Social</div>
+
+      <!-- Recess -->
+      <div class="time">10:25 - 10:40</div>
+      <div class="recess" style="grid-column: 2 / 7;">Recess</div>
+
+      <!-- Row 4 -->
+      <div class="time">10:45 - 11:30</div>
+      <div class="math">Math</div>
+      <div class="sci">Science</div>
+      <div class="soc">Social</div>
+      <div class="eng">English</div>
+      <div class="math">Math</div>
+
+      <!-- Row 5 -->
+      <div class="time">11:35 - 12:20</div>
+      <div class="eng">English</div>
+      <div class="math">Math</div>
+      <div class="sci">Science</div>
+      <div class="soc">Social</div>
+      <div class="eng">English</div>
+
+      <!-- Row 6 -->
+      <div class="time">12:25 - 1:10</div>
+      <div class="sci">Science</div>
+      <div class="soc">Social</div>
+      <div class="math">Math</div>
+      <div class="eng">English</div>
+      <div class="sci">Science</div>
+
+      <!-- Row 7 -->
+      <div class="time">1:15 - 2:00</div>
+      <div class="pt">PT</div>
+      <div class="art">Art</div>
+      <div class="exam">Exam</div>
+      <div class="pt">PT</div>
+      <div class="art">Drawing</div>
+
+      <!-- Row 8 -->
+      <div class="time">2:05 - 2:50</div>
+      <div class="soc">Story Time</div>
+      <div class="math">Revision</div>
+      <div class="eng">Reading</div>
+      <div class="sci">Quiz</div>
+      <div class="soc">Group Work</div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
